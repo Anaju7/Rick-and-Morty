@@ -3,6 +3,8 @@ import Api from "../api";
 import './index.css'
 import Location from "../location";
 import axios from "axios";
+import prev from "../assets/prev.png"
+import next from "../assets/next.png"
 
 const Card = () => {
     // personagem
@@ -18,11 +20,14 @@ const Card = () => {
     const [display, setdisplay] = useState(false);
 
     // paginação
-    const [page, setpages] = useState('')
+    const [page, setpages] = useState('');
+
+    const [idPersonagem, setId] = useState({})
 
     // url inicial da pagina inicial
     const urlInicial = "/character?page=1";
 
+    const urlpersonagem = "/character/"
     // get da api com a urlbase
     const chamadaApi = (url) => {
         // fiz um ternario se tiver alguma page ele faz o get na url da page, se não ele faz na url inicial
@@ -53,7 +58,7 @@ const Card = () => {
         setpages(info.prev)
     }
 
-    const teste = (url) => {
+    const getLocation = (url) => {
         // faz o get em cada url dos personagens
         axios.get(url)
         .then(response => {
@@ -70,6 +75,23 @@ const Card = () => {
 
     }
 
+    const Getpersonagem = (id) => {
+        Api.get(`${urlpersonagem}${id}`)
+        .then(response => {
+            const dadosPerso = {
+                name: response.data.name,
+                status: response.data.status,
+                species: response.data.species,
+                type: response.data.type,
+                gender: response.data.gender,
+                image: response.data.image,
+            }
+            setId(dadosPerso);
+        }).catch(err => {
+            console.error(err)
+        })
+    }
+
     // console.log(dados)
 
     
@@ -79,16 +101,14 @@ const Card = () => {
                 {
                     personagens.map((item,index) => {
                        return (
-                        <div className="card" key={index}>
+                        <div className="card" key={index} onClick={() => {
+                            getLocation(item.location.url)
+                            setdisplay(!display)
+                            Getpersonagem(item.id)
+                        }}>
                             <img className="" src={item.image} alt=""/>
                             <div className="card-body">
                                 <strong>{item.name}</strong>
-                                <button onClick={() => {
-                                    // chama a função para fz um get em cada uma das urls que retorna de cada item
-                                    teste(item.location.url)
-                                    // chama a função para mudar o display do modal
-                                    setdisplay(!display)
-                                }}>mais</button>
                             </div>
                         </div>
                        )
@@ -98,12 +118,12 @@ const Card = () => {
                 {
                     // faz um ternario para o modal ficar interativo
                     display &&
-                    <Location location={locations} />
+                        <Location location={locations} personagem={idPersonagem}/>
                 }
         </div>
         <div className="pagination">
-            <button onClick={voltar} className="prev">-</button>
-            <button onClick={avanca} className="next">+</button>
+            <button onClick={voltar} ><img className="img-button" src={prev} /></button>
+            <button onClick={avanca} ><img className="img-button" src={next} /></button>
         </div>
         </>
     )

@@ -2,6 +2,15 @@
     display: flex;
     flex-direction: column;
  }
+
  .components {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     position:absolute;
+ }
+
+ .logo {
+    width: 75%;
+    margin-top: 40px;
  }

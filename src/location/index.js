@@ -1,15 +1,22 @@
 import "./style.css"
 
-const Location = ({location}) => {
+const Location = ({location, personagem}) => {
 
-    console.log(location)
+    console.log(personagem)
 
     return (
         <>
             <div className="modal">
-                <p>name: {location.name}</p>
-                <p>dimension: {location.dimension}</p>
-                <p>type: {location.type}</p>
+                <div className="personagem">
+                    <img src={personagem.image}/>
+                    <p>{personagem.name}</p>
+                </div>
+                <div className="infos">
+                <p><strong></strong>{personagem.gender}</p>
+                <p><strong>Name: </strong> {location.name}</p>
+                <p><strong>Dimension: </strong> {location.dimension}</p>
+                <p><strong>Type: </strong> {location.type}</p>
+                </div>
             </div>
         </>
     )
