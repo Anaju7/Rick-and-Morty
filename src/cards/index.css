@@ -1,0 +1,43 @@
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    margin-bottom: 50px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+ .card {
+    width: 13rem;
+    height: 16rem;
+    margin: 10px;
+    background: #1ae013;
+    border-radius: 10%;
+    color: white;
+}
+
+
+.card img {
+    width: 100%;
+    border-radius: 10%;
+}
+
+.card-body {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.pagination {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.pagination button {
+    width: 20px;
+}
+
+
