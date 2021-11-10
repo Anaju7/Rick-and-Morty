@@ -3,8 +3,9 @@ import Api from "../api";
 import './index.css'
 import Location from "../location";
 import axios from "axios";
-import prev from "../assets/prev.png"
-import next from "../assets/next.png"
+import { IoIosArrowDropright } from "react-icons/io";
+import { IoIosArrowDropleft } from "react-icons/io";
+
 
 const Card = () => {
     // personagem
@@ -62,7 +63,7 @@ const Card = () => {
         // faz o get em cada url dos personagens
         axios.get(url)
         .then(response => {
-            // essa variavel pega os dados que vem da location url e coloca em um objeto
+            setLocations({})
             const dados = {
                 type: response.data.type,
                 name: response.data.name,
@@ -92,12 +93,10 @@ const Card = () => {
         })
     }
 
-    // console.log(dados)
-
     
     return ( 
         <>
-        <div className="cards">
+        <div className="cards" onClick={() => document.body.addEventListener("click", setdisplay(!display))}>
                 {
                     personagens.map((item,index) => {
                        return (
@@ -122,8 +121,8 @@ const Card = () => {
                 }
         </div>
         <div className="pagination">
-            <button onClick={voltar} ><img className="img-button" src={prev} /></button>
-            <button onClick={avanca} ><img className="img-button" src={next} /></button>
+            <button onClick={voltar} ><IoIosArrowDropleft className="icon" size="50px" /></button>
+            <button onClick={avanca} ><IoIosArrowDropright className="icon" size="50px" /></button>
         </div>
         </>
     )

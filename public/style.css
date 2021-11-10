@@ -1,0 +1,23 @@
+/* .load {
+    background: black;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.spinner{
+   height:60px;
+   width:60px;
+   border:5px solid rgba(124, 189, 201, 0.1);
+   border-left-color:#7dcd40;
+   border-radius:50%;
+   animation: spin 1s linear infinite;
+ }
+ 
+ @keyframes spin{
+   to {
+     transform:rotate(360deg);
+   }
+ } */
