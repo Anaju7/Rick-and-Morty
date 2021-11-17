@@ -96,6 +96,9 @@ const Card = () => {
     
     return ( 
         <>
+        <div>
+           <h1>Pesonagens</h1>
+        </div>
         <div className="cards" onClick={() => document.body.addEventListener("click", setdisplay(!display))}>
                 {
                     personagens.map((item,index) => {

@@ -1,0 +1,56 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 60px;
+}
+
+.Sobre {
+    background:rgba(56, 56, 59, 0.589);
+    width: 80%;
+    color: #e0f1e3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 0 0 15px 0px #7ab94a;
+}
+
+.Sobre:hover {
+    box-shadow: 0 0 15px 0px rgb(165, 252, 5);
+}
+
+.titulo {
+    padding: 5px;
+    color: rgb(175, 255, 29);
+}
+
+.texto p {
+    padding: 10px 5px;
+}
+
+.div-imgRickMorty {
+    display: flex;
+    justify-content: center;
+}
+.div-imgRickMorty img {
+    width: 22rem;
+}
+
+@media (min-width: 800px) {
+    .container {
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    .Sobre {
+        width: 45%;
+    }
+
+    .div-imgRickMorty img {
+        width: 27rem;
+    }
+    
+
+}

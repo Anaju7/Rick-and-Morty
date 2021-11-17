@@ -21,7 +21,7 @@
     align-items: center;
     border-radius: 30px;
     transition: 100ms ease-in-out;
-    box-shadow:0 0 15px 0px #7dcd40;
+    box-shadow:0 0 15px 0px #7dcd40d5;
 }
 
 .modal:hover{
@@ -90,36 +90,3 @@
     padding-top: 30px;
   }
 }
-
-
-/* .modal:before,
-.modal:after {
-  content: "";
-  position: absolute;
-  top: 0;
-  right: 0;
-  left: 0;
-  bottom: 0;
-  transition: transform .3s ease-in-out;
-}
-
-.modal:before{
-    border-left: 4px solid #22a2bd;
-    border-right: 4px solid #22a2bd;
-    transform:scaley(0);
-}
-
-.modal:after{
-  border-top: 4px solid #22a2bd;
-  border-bottom: 4px solid #22a2bd;
-  transform:scalex(0);
-}
-
-.modal:hover:before{
-  transform:scaley(1);
-}
-
-.modal:hover:after{
-  transform:scalex(1);
-} */
-

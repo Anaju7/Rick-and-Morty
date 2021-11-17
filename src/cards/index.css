@@ -1,11 +1,15 @@
 .cards {
     display: flex;
     flex-wrap: wrap;
-    margin-top: 50px;
     margin-bottom: 30px; 
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+h1 {
+    margin-bottom: 30px;
+    color: rgb(175, 255, 29);;
 }
 
 .card {

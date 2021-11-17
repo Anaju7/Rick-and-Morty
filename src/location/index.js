@@ -15,7 +15,7 @@ const Location = ({location, personagem}) => {
                 <h3 className="titulo-modal">Detalhes</h3>
                 <div className="detalhes-personagem">
                     <div className="personagem">
-                        <img src={personagem.image}/>
+                        <img src={personagem.image} alt={personagem.name}/>
                         <h3>{personagem.name}</h3>
                     </div>
                     <div className="modal-body">

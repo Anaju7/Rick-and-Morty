@@ -4,7 +4,9 @@ const Footer = () => {
 
     return (
         <>
-        <a href="">Anaju</a>
+        <a href="#">Anaju</a>
         </>
     )
 }
+
+export default Footer;
