@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import Api from "../api";
-import './index.css'
+import './style.css'
 import Location from "../location";
 import axios from "axios";
 import { IoIosArrowDropright } from "react-icons/io";
@@ -108,7 +108,7 @@ const Card = () => {
                             setdisplay(!display)
                             Getpersonagem(item.id)
                         }}>
-                            <img className="" src={item.image} alt=""/>
+                            <img src={item.image} alt={item.name}/>
                             <div className="card-body">
                                 <strong>{item.name}</strong>
                             </div>
@@ -118,7 +118,6 @@ const Card = () => {
                     })
                 }
                 {
-                    // faz um ternario para o modal ficar interativo
                     display &&
                         <Location location={locations} personagem={idPersonagem}/>
                 }

@@ -7,8 +7,6 @@ import { IoMan } from "react-icons/io5";
 
 const Location = ({location, personagem}) => {
 
-    // console.log(personagem)
-
     return (
         <div className="background-modal">
             <div className="modal">
@@ -35,10 +33,6 @@ const Location = ({location, personagem}) => {
                             : <p><RiAliensFill className="icon" size="20px"/> {personagem.species}</p>
                             }
                         </div>
-                        {/* <div className="infos">
-                        <p> {personagem.status}</p>
-                            
-                        </div> */}
                     </div>
                 </div>
             </div>

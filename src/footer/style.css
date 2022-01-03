@@ -1,0 +1,50 @@
+.footer {
+    display: flex;
+    align-items: center;
+    color: rgb(175, 255, 29);
+    margin-top: 30px;
+}
+
+.conteudo {
+    text-align: center;
+}
+
+.icon-footer {
+    margin: 15px 10px;
+    color: #7dcd40;
+}
+
+.icon-footer:hover {
+    color: rgb(175, 255, 29);
+}
+
+.img-footer {
+    display: none;
+}
+
+.img-footer2 {
+    display: none;
+}
+
+@media (min-width: 800px) {
+
+    .img-footer {
+        display: block;
+        position: absolute;
+        padding-top: 50px;
+        width: 12rem;
+        right: 0px;
+    }
+
+    .img-footer2 {
+        padding-top: 15px;
+        display: block;
+        width: 20rem;
+        position: absolute;
+        left: 0px;
+    }
+
+}
+
+
+

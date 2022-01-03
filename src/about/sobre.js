@@ -22,7 +22,7 @@ const About = () => {
                 </div>
             </div>
             <div className="div-imgRickMorty">
-                <img src={imgRickMorty}/>
+                <img src={imgRickMorty} alt="rick e morty saltando do portal"/>
             </div>
         </div>
     )
