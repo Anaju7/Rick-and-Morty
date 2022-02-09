@@ -1,9 +1,8 @@
 import react from "react";
 import "./style.css"
-import { BsGithub } from "react-icons/bs";
-import { BsLinkedin } from "react-icons/bs";
-import rickMorty from "../assets/dança-RM.png";
-import rickMortyImg from "../assets/rick&morty.png";
+import { BsGithub, BsLinkedin} from "react-icons/bs";
+import rickMorty from "../../assets/dança-RM.png";
+import rickMortyImg from "../../assets/rick&morty.png";
 
 const Footer = () => {
 

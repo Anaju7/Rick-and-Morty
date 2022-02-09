@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Supermercado+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
 * {
     margin: 0;
     padding: 0;
@@ -8,11 +9,13 @@
 body {
     width: 100vw;
     background-color: black;
-    font-family: 'Libre Baskerville', serif;
     font-size: 14px;
+    font-family: 'Poppins', sans-serif;
 }
 
-
+h1,h2 {
+    font-family: 'Supermercado One', cursive;
+}
 
 ::-webkit-scrollbar {
     background: transparent;
