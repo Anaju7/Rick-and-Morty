@@ -10,7 +10,7 @@
 
 <h3 id="Descrição">Descrição do Projeto</h3>
 
-<p align="center" >Projeto criado para apresentar a famosa aminação Rick and morty e seus personagens, informações dos personagens foram retiradas da <a href="https://rickandmortyapi.com/">API Rick and Morty</a>, no projeto temos um pequeno resumo sobre a animação e lista com todos os personagens</p>
+<p>Projeto criado para apresentar a famosa aminação Rick and morty e seus personagens, informações dos personagens foram retiradas da <a href="https://rickandmortyapi.com/">API Rick and Morty</a>, no projeto temos um pequeno resumo sobre a animação e lista com todos os personagens</p>
 
 <h3 id="tecnologias">🛠 Tecnologias</h3>
 
@@ -55,4 +55,4 @@ $ npm start
 Feito com ❤️ por AnaJU 👋🏽 Entre em contato!
 
 [![Linkedin Badge](https://img.shields.io/badge/-AnaJu-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/ana-ju/)](https://www.linkedin.com/in/ana-ju/) 
-[![Gmail Badge](https://img.shields.io/badge/-tgmarinho@gmail.com-c14438?style=flat-square&logo=Gmail&logoColor=white&link=mailto:anajulia.anaju7@gmail.com)](mailto:anajulia.anaju7@gmail.com)
+[![Gmail Badge](https://img.shields.io/badge/-anajulia.anaju7@gmail.com-c14438?style=flat-square&logo=Gmail&logoColor=white&link=mailto:anajulia.anaju7@gmail.com)](mailto:anajulia.anaju7@gmail.com)
