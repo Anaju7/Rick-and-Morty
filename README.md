@@ -5,7 +5,7 @@
 <p align="center">
  <a href="#Descrição">Descrição</a> •
  <a href="#tecnologias">Tecnologias</a> • 
- <a href="#requisitos">Pré-requisitos</a> • 
+ <a href="#requisitos">Pré-requisitos</a> 
 </p>
 
 <h3 id="Descrição">Descrição do Projeto</h3>
@@ -49,8 +49,6 @@ $ npm start
 ---
 
 <a href="https://github.com/Anaju7">
- <img style="border-radius: 50%" src="https://user-images.githubusercontent.com/66645233/154152776-f368fcba-20a3-45dc-a3f6-8bb35b4c6538.jpg" width="100px;" alt=""/>
- <br />
  <sub><b>Ana Julia 🚀</b></sub></a> 
 
 
