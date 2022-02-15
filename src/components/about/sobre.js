@@ -1,4 +1,3 @@
-import react from "react";
 import "./style.css"
 import imgRickMorty from "../../assets/rick&&morty.png"
 

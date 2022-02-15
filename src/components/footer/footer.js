@@ -1,4 +1,3 @@
-import react from "react";
 import "./style.css"
 import { BsGithub, BsLinkedin} from "react-icons/bs";
 import rickMorty from "../../assets/dança-RM.png";

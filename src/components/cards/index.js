@@ -88,6 +88,9 @@ const Card = () => {
         })
     }
 
+    const toggle = () => {
+        setdisplay(!display)
+    }
 
     // funções paginação
     const avanca = () => {
@@ -111,15 +114,16 @@ const Card = () => {
             }} 
             value={search}
             type="text"
-            className="filtro-personagens"/>
+            className="filtro-personagens"
+            placeholder="Procure Personagens"/>
         </form>
-            <div className="cards" onClick={() => document.body.addEventListener("click", setdisplay(!display))}>
+            <div className="cards" >
                     {
                         personagens.map((item,index) => {
                         return (
                             <div className="card" key={index} onClick={() => {
+                                toggle()
                                 getLocation(item.location.url)
-                                setdisplay(!display)
                                 Getpersonagem(item.id)
                             }}>
                                 <img src={item.image} alt={item.name}/>
@@ -133,7 +137,9 @@ const Card = () => {
                     }
                     {
                         display &&
-                            <Location location={locations} personagem={idPersonagem}/>
+                        <div onClick={toggle} className="background-modal">
+                            <Location  location={locations} personagem={idPersonagem} />
+                        </div>
                     }
             </div>
         <div className="pagination">

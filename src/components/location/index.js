@@ -7,8 +7,8 @@ import { IoMan } from "react-icons/io5";
 
 const Location = ({location, personagem}) => {
 
+    
     return (
-        <div className="background-modal">
             <div className="modal">
                 <h3 className="titulo-modal">Detalhes</h3>
                 <div className="detalhes-personagem">
@@ -36,7 +36,6 @@ const Location = ({location, personagem}) => {
                     </div>
                 </div>
             </div>
-        </div>
     )
 }
 

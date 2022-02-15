@@ -38,7 +38,7 @@
     width: 22rem;
 }
 
-@media (min-width: 800px) {
+@media (min-width: 900px) {
     .container {
         flex-direction: row;
         justify-content: space-evenly;
