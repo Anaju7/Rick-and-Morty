@@ -1,4 +1,4 @@
-<img width="952" alt="image" src="https://user-images.githubusercontent.com/66645233/154138874-f69926cf-e185-4f4d-a660-93577df5f513.png">
+<img width="952" alt="capa-projeto-rick&morty" src="https://user-images.githubusercontent.com/66645233/154138874-f69926cf-e185-4f4d-a660-93577df5f513.png">
 
 <h1>Rick and Morty</h1>
 
@@ -7,6 +7,11 @@
  <a href="#tecnologias">Tecnologias</a> • 
  <a href="#requisitos">Pré-requisitos</a> 
 </p>
+
+
+<video width="900" controls>
+  <source src="./src/assets/ezgif.com-gif-maker.mp4" type="video/mp4">
+</video>
 
 <h3 id="Descrição">Descrição do Projeto</h3>
 
@@ -22,8 +27,9 @@
 
 <h3 id="requisitos">Pré-requisitos</h3>
 
-<p>Para clonar e executar este aplicativo, você precisará do [Git](https://git-scm.com/),
-[Node.js](https://nodejs.org) instalado em seu computador.</p>
+<p>Para clonar e executar este aplicativo, você precisará do 
+<a href="https://git-scm.com/">Git</a>
+<a href="https://nodejs.org">Node.js</a> instalado em seu computador.</p>
 <p>
 Além disto é bom ter um editor para trabalhar com o código como [VSCode](https://code.visualstudio.com/)
 </p>
