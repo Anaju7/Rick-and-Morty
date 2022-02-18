@@ -9,10 +9,6 @@
 </p>
 
 
-<video width="900" controls>
-  <source src="./src/assets/ezgif.com-gif-maker.mp4" type="video/mp4">
-</video>
-
 <h3 id="Descrição">Descrição do Projeto</h3>
 
 <p>Projeto criado para apresentar a famosa aminação Rick and morty e seus personagens, informações dos personagens foram retiradas da <a href="https://rickandmortyapi.com/">API Rick and Morty</a>, no projeto temos um pequeno resumo sobre a animação e lista com todos os personagens</p>
@@ -28,10 +24,11 @@
 <h3 id="requisitos">Pré-requisitos</h3>
 
 <p>Para clonar e executar este aplicativo, você precisará do 
-<a href="https://git-scm.com/">Git</a>
+<a href="https://git-scm.com/">Git</a>, 
 <a href="https://nodejs.org">Node.js</a> instalado em seu computador.</p>
 <p>
-Além disto é bom ter um editor para trabalhar com o código como [VSCode](https://code.visualstudio.com/)
+Além disto é bom ter um editor para trabalhar com o código como 
+ <a href="https://code.visualstudio.com/">VSCode</a>
 </p>
 
 ```bash
